@@ -1,5 +1,15 @@
 # Ảnh cabin chỉ ở trên máy bạn (RULES §2): không bao giờ commit ảnh hay thư mục Gxx/
 G[0-9][0-9]/
+G[0-9][0-9].zip
+core_images.zip
+.local_lab/
+/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS.zip
+# Công cụ hỗ trợ và ghi chép riêng, không thuộc bộ hồ sơ nộp
+/scripts/lab_workflow.py
+/scripts/prepare_peer_review.py
+/scripts/qc_peer_review.py
+/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/qc_provenance.json
+/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/VIEC_CAN_BO_SUNG.md
 *.png
 *.jpg
 *.jpeg
