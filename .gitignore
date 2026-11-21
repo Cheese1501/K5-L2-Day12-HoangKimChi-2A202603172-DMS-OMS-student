@@ -1,23 +1,19 @@
-# Ảnh cabin chỉ ở trên máy bạn (RULES §2): không bao giờ commit ảnh hay thư mục Gxx/
-G[0-9][0-9]/
-G[0-9][0-9].zip
-core_images.zip
-.local_lab/
-/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS.zip
-# Công cụ hỗ trợ và ghi chép riêng, không thuộc bộ hồ sơ nộp
-/scripts/lab_workflow.py
-/scripts/prepare_peer_review.py
-/scripts/qc_peer_review.py
-/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/qc_provenance.json
-/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/VIEC_CAN_BO_SUNG.md
-*.png
-*.jpg
-*.jpeg
-*.mp4
-part_*.zip
-peer_*.zip
-ir_pairs/
-__pycache__/
-*.pyc
-.DS_Store
-.env*
+# Chỉ theo dõi các file thuộc hồ sơ nộp; tài liệu và dữ liệu khác giữ trên máy.
+/*
+!/.gitignore
+!/README.md
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/
+/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/*
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/export_final.zip
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/export_final_v2.zip
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/check_cpA.txt
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/check_cpB.txt
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/check_final.txt
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/check_final_v2.txt
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/disagreement_log.csv
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/ir_log.csv
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/class_list_v0.md
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/self_review.md
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/exit_ticket.md
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/TEAM.md
+!/K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/prompts.md
