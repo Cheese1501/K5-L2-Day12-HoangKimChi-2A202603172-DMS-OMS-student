@@ -8,8 +8,8 @@ Tôi rà thuộc tính, tọa độ box và cờ điểm trong export. Việc n�
 
 | Ảnh | Đối tượng | Loại lỗi | Ghi chú | Tình trạng |
 |---|---|---|---|---|
-| S01_ir.png | child_seat ở trái ảnh | seat_flip | Box x=116,69–373,30 đang mang rear_left; theo quy ước camera nhìn về sau cần kiểm/sửa thành rear_right. | Chưa sửa trong CVAT |
-| S02_rgb.png | person ở phải ảnh và infant_seat ở trái ảnh | seat_flip | Tôi đã gọi ghế theo bên ảnh. Người cần kiểm/sửa sang rear_left; nôi sang rear_right. | Chưa sửa trong CVAT |
+| S01_ir.png | child_seat ở trái ảnh | seat_flip | Box x=116,69–373,30 đang mang rear_left; theo quy ước camera nhìn về sau cần kiểm/sửa thành rear_right. | Bản v2 đã sửa box này |
+| S02_rgb.png | person ở phải ảnh và infant_seat ở trái ảnh | seat_flip | Tôi đã gọi ghế theo bên ảnh. Người cần kiểm/sửa sang rear_left; nôi sang rear_right. | Bản v2 đã sửa nôi, còn person cần sửa |
 | D04.png | face và 8 điểm mắt | ok về sự nhất quán của cờ | Hai mắt đều unknown; 8 điểm mắt có occluded=1. Bản của Khải cũng để mắt unknown nhưng không bật cờ điểm. | Cần xác nhận bằng ảnh, không tự đổi unknown thành open |
 | D06.png | face và mắt phải | flag | Bản xuất đầu có cảnh báo mắt/cờ không nhất quán. Bản hiện tại để mắt trái open và không che; mắt phải unknown với 4 điểm outside=1. | Đã hết cảnh báo; cần kiểm vị trí điểm trên ảnh |
 
@@ -27,4 +27,4 @@ Tôi cũng nhận ra checker báo 0 lỗi chỉ có nghĩa dữ liệu vượt c
 
 ## Kế hoạch sửa và kiểm lại
 
-Tôi cần sửa các seat trong seat_review.csv trên CVAT, kiểm riêng các ca khác lớp ghế và điện thoại, rồi xuất export_final_v2.zip và chạy lại checker. Khải đã sửa theo bài của tôi và tôi xác nhận hai bên không còn bất đồng. Các nhận xét ambiguous trong CSV là kết quả phân tích bản cũ, không phải tình trạng trao đổi hiện tại. Tôi chưa có export mới của Khải để kiểm lại mức khớp bằng diff. Việc đồng thuận không thay thế kiểm đúng theo guideline, đặc biệt các lỗi seat nêu trên.
+Tôi đã xuất export_final_v2.zip và chạy check_final_v2.txt, kết quả 0 lỗi cấu trúc, 0 cảnh báo. Tôi đã sửa 18 box ghế; còn 4 box person tại S02_rgb, S02_ir, S08_rgb và S08_ir cần đổi rear_right thành rear_left. Tôi cần kiểm riêng các ca khác lớp ghế và điện thoại, sau đó xuất lại sau khi sửa xong. Khải đã sửa theo bài của tôi và tôi xác nhận hai bên không còn bất đồng. Các nhận xét ambiguous trong CSV là kết quả phân tích bản cũ, không phải tình trạng trao đổi hiện tại. Tôi chưa có export mới của Khải để kiểm lại mức khớp bằng diff. Việc đồng thuận không thay thế kiểm đúng theo guideline, đặc biệt các lỗi seat nêu trên.

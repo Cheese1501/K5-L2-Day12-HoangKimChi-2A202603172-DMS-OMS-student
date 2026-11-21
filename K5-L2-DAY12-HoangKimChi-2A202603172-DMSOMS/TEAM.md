@@ -14,7 +14,7 @@ Tôi xác nhận Khải đã sửa theo bài của tôi và hai bên không còn
 
 ## Kết quả và việc cần sửa
 
-Tôi phát hiện lỗi đảo trái/phải ghế lặp lại trong bài của mình: 22 box trên 14 ảnh OMS cần kiểm/sửa theo quy ước ghế của xe. Tôi ghi từng box trong seat_review.csv. Tôi chưa sửa XML hoặc tạo export sau review.
+Lượt QC trước ghi nhận 22 box trên 14 ảnh OMS cần sửa ghế. Tôi đã có export_final_v2.zip sau sửa; kiểm lại cho thấy 18 box đã được sửa, còn 4 box person tại S02_rgb, S02_ir, S08_rgb và S08_ir cần đổi rear_right thành rear_left. seat_review.csv hiện ghi 4 box này. Tôi không sửa XML bằng tay.
 
 Trong phần có nhãn của Khải, checker báo 0 lỗi cấu trúc và 15 cảnh báo. Có 12 cảnh báo về trạng thái mắt/cờ điểm mặt và 3 cảnh báo object mang seat=driver trong ảnh OMS. Tôi ghi các ca này trong BAO_CAO_QC.md để Khải kiểm lại trên CVAT.
 

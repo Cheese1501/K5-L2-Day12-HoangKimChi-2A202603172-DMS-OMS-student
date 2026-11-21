@@ -2,6 +2,14 @@
 
 Tôi là Hoàng Kim Chi, MSSV 2A202603172, làm bộ ảnh G07. Tôi đối chiếu export của mình với file export do Khải cung cấp để kiểm cấu trúc, thuộc tính, vị trí box và các bất đồng cần xử lý.
 
+## Cập nhật export sau sửa
+
+Tôi đã xuất bản mới ghi thời điểm 10:17:28 UTC ngày 21/11/2026, tương ứng 17:17:28 giờ Việt Nam, và lưu nguyên byte dưới tên export_final_v2.zip. Checker báo đủ 22 ảnh, 22 frame_meta, 0 lỗi và 0 cảnh báo. Modality đúng ở cả 22 ảnh; light của ảnh SVIRO đều unknown.
+
+Tôi đã sửa 18 trong 22 box ghế của lượt QC trước. Hiện còn 4 box person tại S02_rgb, S02_ir, S08_rgb và S08_ir mang rear_right, trong khi tọa độ nằm rõ bên phải ảnh. Tôi cần kiểm/sửa các box này thành rear_left theo §4.4-3. seat_review.csv hiện chỉ liệt kê 4 box còn lại. Các số liệu 22 box ở phần lịch sử bên dưới áp dụng cho bản trước khi sửa.
+
+Nhật ký ir_log.csv có 4 dòng đối chiếu từ nhãn xuất; tôi vẫn cần xác nhận hiện tượng trực tiếp trên ảnh. Khải đã sửa theo bài của tôi và hai bên không còn bất đồng theo xác nhận của tôi; chưa có export mới của Khải để chạy diff sau sửa.
+
 ## Dữ liệu dùng để kiểm tra
 
 | Nguồn | Phạm vi | Cách sử dụng |
@@ -26,9 +34,9 @@ Tôi giữ nguyên file nguồn trên máy, không đưa bản export của Kh�
 
 Trong disagreement_log.csv, tôi điền verdict, guideline_rule và action cho cả 140 dòng. Có 14 dòng về seat đủ căn cứ kết luận peer theo quy ước và tọa độ; 126 dòng còn lại mang verdict=ambiguous để kiểm bằng ảnh hoặc hỏi thêm. Các verdict này mô tả lần phân tích file cũ. Sau đó Khải sửa theo bài của tôi và tôi xác nhận không còn bất đồng; cột followup_status và followup_basis ghi nhận thông tin này. Tôi không đổi số liệu diff cũ thành 0 khi chưa có export mới để đối chiếu.
 
-## Lỗi trong bài của tôi cần sửa
+## Lỗi trong bài của tôi trước khi sửa
 
-Tôi phát hiện 22 box trên 14 ảnh bị đảo rear_left và rear_right so với vị trí trái/phải ảnh. Danh sách đầy đủ có trong seat_review.csv, gồm tên ảnh, loại box và tọa độ để tìm đúng đối tượng trên CVAT. Các giá trị đề xuất là mục tiêu kiểm/sửa, không phải bản XML đã chỉnh.
+Tôi phát hiện 22 box trên 14 ảnh bị đảo rear_left và rear_right so với vị trí trái/phải ảnh. Đây là số liệu của export_final.zip trước sửa. seat_review.csv hiện được cập nhật theo bản v2 và chỉ còn các box chưa sửa, có tên ảnh, loại box và tọa độ để tìm trên CVAT.
 
 | Cảnh, áp dụng cho cả RGB và IR | Thuộc tính cần kiểm/sửa theo quy ước ghế |
 |---|---|
@@ -59,4 +67,4 @@ Cấu hình mới bổ sung child_seat.occupied=yes, giữ unknown và no. Tôi 
 
 Tôi mới thực hiện QC từ XML, chưa xác nhận trực quan độ sát box, nhầm lớp ghế, che khuất điểm mặt, loại kính hoặc vùng nhìn. Tôi đã ghi 4 dòng ir_log từ nhãn trong export tại S02_ir, S07_ir, D04 và D06, tách IR_sim với real_IR. Các dòng này ghi nhận dữ liệu nhãn, không chứng minh nguyên nhân quang học hay mức mất thông tin trên ảnh; tôi cần mở ảnh để xác nhận trước khi coi là nhật ký quan sát trực tiếp. Tôi xác nhận đã thống nhất với Khải theo hướng Khải sửa theo bài của tôi; chưa có export mới để xác minh bằng diff.
 
-Tôi sẽ sửa các seat trên CVAT, kiểm các ca ambiguous ưu tiên, xuất export_final_v2.zip và chạy lại checker. Tôi không sửa XML bằng tay, không tạo bản v2 khi chưa sửa nhãn, và không dùng kết quả 0 lỗi cấu trúc để khẳng định bài hoàn toàn đúng.
+Tôi đã có export_final_v2.zip và check_final_v2.txt. Tôi sẽ sửa tiếp 4 box person còn lại trên CVAT, kiểm các ca QC ưu tiên và xuất lại sau khi lưu. Tôi không sửa XML bằng tay, không tạo bản v2 khi chưa sửa nhãn, và không dùng kết quả 0 lỗi cấu trúc để khẳng định bài hoàn toàn đúng.
