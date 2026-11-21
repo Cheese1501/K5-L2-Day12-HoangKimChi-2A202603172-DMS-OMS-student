@@ -1,5 +1,23 @@
-﻿image,label,xtl,ytl,xbr,ybr,current_seat,seat_to_verify,guideline_rule,action
-S02_ir.png,person,551.21,96.88,876.82,640.0,rear_right,rear_left,4.4-3,Tôi cần kiểm lại box này trên CVAT và sửa ghế theo xe; chưa sửa export.
-S02_rgb.png,person,556.54,91.98,875.97,640.0,rear_right,rear_left,4.4-3,Tôi cần kiểm lại box này trên CVAT và sửa ghế theo xe; chưa sửa export.
-S08_ir.png,person,525.44,75.07,960.0,640.0,rear_right,rear_left,4.4-3,Tôi cần kiểm lại box này trên CVAT và sửa ghế theo xe; chưa sửa export.
-S08_rgb.png,person,519.19,75.63,960.0,640.0,rear_right,rear_left,4.4-3,Tôi cần kiểm lại box này trên CVAT và sửa ghế theo xe; chưa sửa export.
+﻿image,label,xtl,ytl,xbr,ybr,current_seat,seat_to_verify,guideline_rule,action,status
+S01_ir.png,child_seat,116.69,197.38,373.3,632.67,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S01_rgb.png,child_seat,112.8,200.22,380.01,624.69,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S02_ir.png,person,551.21,96.88,876.82,640.0,rear_left,rear_left,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S02_ir.png,infant_seat,0.0,321.03,399.82,640.0,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S02_rgb.png,person,556.54,91.98,875.97,640.0,rear_left,rear_left,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S02_rgb.png,infant_seat,0.0,314.03,393.98,640.0,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S04_ir.png,infant_seat,0.0,320.3,383.2,640.0,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S04_ir.png,child_seat,558.05,159.75,934.13,618.31,rear_left,rear_left,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S04_rgb.png,child_seat,558.05,158.65,933.03,613.91,rear_left,rear_left,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S04_rgb.png,infant_seat,0.0,317.0,381.0,640.0,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S05_ir.png,infant_seat,0.0,309.31,393.1,635.9,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S05_rgb.png,infant_seat,0.0,315.9,388.7,635.9,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S06_ir.png,child_seat,557.77,157.24,934.38,619.1,rear_left,rear_left,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S06_ir.png,infant_seat,0.0,306.1,387.28,631.82,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S06_rgb.png,child_seat,557.72,154.03,934.9,636.78,rear_left,rear_left,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S06_rgb.png,infant_seat,0.0,306.1,388.55,631.82,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S07_ir.png,object,201.01,343.89,380.41,603.45,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S07_rgb.png,object,204.82,348.98,384.22,600.9,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S08_ir.png,person,525.44,75.07,960.0,640.0,rear_left,rear_left,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S08_ir.png,child_seat,113.21,196.3,405.85,630.17,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S08_rgb.png,person,519.19,75.63,960.0,640.0,rear_left,rear_left,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại
+S08_rgb.png,child_seat,114.49,196.3,404.58,633.98,rear_right,rear_right,4.4-3,Tôi đã sửa seat trên CVAT và xác nhận thuộc tính đúng trong export_final_v2.zip.,Đã sửa và kiểm lại

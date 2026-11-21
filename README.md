@@ -5,12 +5,12 @@
 Học viên: **Hoàng Kim Chi — 2A202603172**. Hồ sơ được lưu tại [thư mục bài làm](K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/).
 
 - [Báo cáo QC và đối chiếu với Lê Quang Khải](K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/BAO_CAO_QC.md).
-- [Danh sách box cần kiểm lại thuộc tính ghế](K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/seat_review.csv).
-- Hồ sơ có đủ 11 file bắt buộc theo SUBMISSION.md. Tôi đã bổ sung export_final_v2.zip và check_final_v2.txt; còn 4 box person cần kiểm/sửa theo danh sách QC.
+- [Lịch sử 22 box ghế đã sửa và kiểm lại](K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/seat_review.csv).
+- Bản sau sửa: export_final_v2.zip và check_final_v2.txt; đủ 22 ảnh, 22 frame_meta, 0 lỗi và 0 cảnh báo. Kiểm bổ sung không còn phát hiện lỗi ghế đã nêu.
 
-Cấu hình cập nhật được cung cấp ngày 21/11/2026 cho phép `child_seat.occupied` nhận `unknown`, `no`, `yes`. JSON và checker trong repo đã đồng bộ; các mô tả cũ giới hạn thuộc tính này ở `no/unknown` trong tài liệu ban đầu đã được thay thế bằng cấu hình mới.
+Hồ sơ có đủ 11 file bắt buộc theo SUBMISSION.md cùng hai file sau sửa. Khải đã sửa theo bài của tôi và hai bên không còn bất đồng theo xác nhận của tôi; số liệu diff lưu trong hồ sơ là lịch sử của bản cũ, chưa có export mới của Khải để đo lại. Nhật ký IR gồm 4 dòng đối chiếu từ nhãn trong export, không phải xác nhận quan sát trực tiếp hiện tượng quang học.
 
-Export hiện tại vượt kiểm cấu trúc với 0 lỗi, 0 cảnh báo, nhưng QC bổ sung trên bản v2 còn 4 box person cần kiểm/sửa (18/22 box của bản trước đã được sửa). Nhật ký IR có 4 dòng đối chiếu từ export, còn cần xác nhận bằng ảnh. Tôi xác nhận Khải đã sửa theo bài của tôi và không còn bất đồng; chưa có export mới của Khải để chạy diff sau sửa. Hồ sơ vẫn cần xử lý các box ghế trước khi nộp.
+Cấu hình cập nhật được cung cấp ngày 21/11/2026 cho phép child_seat.occupied nhận unknown, no và yes. JSON và checker trong repo đã được đồng bộ; mô tả cũ giới hạn thuộc tính này ở no/unknown trong tài liệu gốc đã được thay thế bằng cấu hình mới.
 
 AI20K K5 · L2 · Ngày 12 · 14:00–18:00 · CVAT chạy trên máy của bạn · làm **cá nhân hoặc nhóm 2–4 người**
 
