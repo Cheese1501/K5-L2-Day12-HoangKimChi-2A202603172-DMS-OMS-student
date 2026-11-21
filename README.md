@@ -1,5 +1,17 @@
 # Lab Ngày 12 — DMS & OMS: gán nhãn khung hình cabin RGB + IR
 
+## Hồ sơ cá nhân G07
+
+Học viên: **Hoàng Kim Chi — 2A202603172**. Hồ sơ được lưu tại [thư mục bài làm](K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/).
+
+- [Báo cáo QC và đối chiếu với Lê Quang Khải](K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/BAO_CAO_QC.md).
+- [Danh sách box cần kiểm lại thuộc tính ghế](K5-L2-DAY12-HoangKimChi-2A202603172-DMSOMS/seat_review.csv).
+- Hồ sơ có đủ 11 file bắt buộc theo SUBMISSION.md. Tôi còn cần sửa các ghế nêu trong báo cáo QC và xuất bản v2 sau khi sửa.
+
+Cấu hình cập nhật được cung cấp ngày 21/11/2026 cho phép `child_seat.occupied` nhận `unknown`, `no`, `yes`. JSON và checker trong repo đã đồng bộ; các mô tả cũ giới hạn thuộc tính này ở `no/unknown` trong tài liệu ban đầu đã được thay thế bằng cấu hình mới.
+
+Export hiện tại vượt kiểm cấu trúc với 0 lỗi, 0 cảnh báo, nhưng QC bổ sung phát hiện 22 box ghế cần kiểm/sửa. Nhật ký IR có 4 dòng đối chiếu từ export, còn cần xác nhận bằng ảnh. Tôi xác nhận Khải đã sửa theo bài của tôi và không còn bất đồng; chưa có export mới của Khải để chạy diff sau sửa. Hồ sơ vẫn cần xử lý các box ghế trước khi nộp.
+
 AI20K K5 · L2 · Ngày 12 · 14:00–18:00 · CVAT chạy trên máy của bạn · làm **cá nhân hoặc nhóm 2–4 người**
 
 Bạn gán nhãn **22 khung hình** cabin (tối đa 26) theo Guideline Cabin v1.0. Sau đó bạn tự kiểm bằng script `cabin_check`, đổi file export với một bạn để đối chiếu, rồi sửa lại. Cuối buổi bạn ghi những gì ảnh hồng ngoại (IR) làm mất so với ảnh màu, và viết bản nháp danh sách lớp cho model DMS/OMS.

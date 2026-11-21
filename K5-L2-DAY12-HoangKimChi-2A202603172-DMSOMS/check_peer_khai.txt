@@ -1,0 +1,20 @@
+File: .local_lab/peer_khai_comparison.zip
+Ảnh: 22 · đã có frame_meta: 22 · số đối tượng: child_seat=7, face=10, face13=6, hand=12, infant_seat=14, object=9, person=18, phone=2
+  [WARN] D01.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D01.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D02.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D02.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D03.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D03.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D04.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D04.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D05.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D05.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D06.png: eye_left=unknown nhưng không điểm left_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] D06.png: eye_right=unknown nhưng không điểm right_eye_* nào có cờ occluded/outside: nếu mắt bị che thì bật occluded, nếu thấy rõ thì chọn open/closed
+  [WARN] S02_rgb.png: object: seat=driver trên ảnh SVIRO (camera chỉ nhìn hàng ghế sau)
+  [WARN] S03_ir.png: object: seat=driver trên ảnh SVIRO (camera chỉ nhìn hàng ghế sau)
+  [WARN] S03_ir.png: object: seat=driver trên ảnh SVIRO (camera chỉ nhìn hàng ghế sau)
+Kết quả: 0 lỗi, 15 cảnh báo. Cảnh báo cần bạn tự xét, không tự động là sai.
+
+Ghi chú của tôi: báo cáo này áp dụng cho bản trước khi sửa, gồm 22 ảnh của task 45 tách từ project export của Khải, không áp dụng cho task 44 trống. Có 12 cảnh báo liên quan trạng thái mắt/cờ điểm và 3 cảnh báo object.seat=driver trong OMS. Sau đó tôi xác nhận Khải đã sửa theo bài của tôi và hai bên không còn bất đồng. Tôi chưa có export mới để chạy lại checker; kết quả trên không mô tả bản của Khải sau khi sửa.
